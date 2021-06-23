@@ -1,0 +1,882 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Roboto:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #F9F9F9;
+    font-family: "Poppins", sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Header */
+
+header {
+    display: inline;
+    position: relative;
+}
+
+header .navbar-nav{
+    height: 5em;
+    background: #F9F9F9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 999999;
+}
+
+header .navbar-nav .navbar-brand {
+    margin-left: 10px;
+    z-index: 99;
+}
+
+header .navbar-nav > .nav-links{
+    display: flex;
+}
+
+header .navbar-nav .nav-links > li {
+    margin: 0 15px 0 15px; }
+
+header .navbar-nav .nav-links > li > a {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.2em;
+    color: rgb(12, 30, 63);
+    position: relative;
+}
+
+header .navbar-nav .nav-links > li > a:hover{
+    color: rgb(18, 145, 161)
+}
+
+header .navbar-nav .nav-toggler {
+    position: absolute;
+    top: -10000px;
+}
+
+/* End Header */
+
+/* Section 1 */
+
+main #section-1 {
+    height: 50em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+main #section-1 article > h1 {
+    font-size: 3.5rem;
+    color: rgb(12, 30, 63);
+    line-height: 4.6rem;
+}
+
+main #section-1 article > h1 > .spesial {
+    color: rgb(18, 145, 161);
+}
+
+main #section-1 article > p {
+    font-weight: 500;
+    font-size: 1.2em;
+    margin-top: 1rem;
+    color: rgb(151, 153, 151);
+}
+
+main #section-1 article .button > button {
+    padding: 0.9rem 2rem;
+    margin: 2rem 0 10px;
+    border-radius: 19px;
+    border: none;
+    box-shadow: 0 6px 5px rgba(0, 0, 0, 0.2);
+    font-size: 1.2rem;
+    font-weight: 500;
+    background: rgb(18, 145, 161);
+    color: white;
+    cursor: pointer;
+}
+
+main #section-1 article .button > button:hover {
+    background: white;
+    color: cadetblue;
+}
+
+main #section-1 article .button .hire-me {
+    margin-right: 20px;
+}
+
+main #section-1 article .button .contact {
+    background: none;
+    box-shadow: none;
+    color: rgb(18, 145, 161);
+}
+
+main #section-1 article .button .contact:hover {
+    background: none;
+    color: rgba(0, 0, 0, 0.2);
+}
+
+main #section-1 .image .fancy {
+    width: 30em;
+    height: 30rem;
+    border-radius: 30% 70% 70% 30% / 30% 37% 63% 70%;
+    background: rgb(18, 145, 161);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    position: relative;
+}
+
+main #section-1 .image .fancy > img {
+    position: absolute;
+    top: -14em;
+    right: 2em;
+    width: 30rem;
+}
+
+main #section-1 .modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    background: rgb(255, 255, 255);
+    border: 5px solid rgb(12, 30, 63);
+    height: 24em;
+    width: 19em;
+    border-radius: 10px;
+    top: -50em;
+    transition: 1s ease-out;
+    z-index: 999;
+    opacity: 0;
+}
+
+
+main #section-1 .modal-icon {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+
+main #section-1 .modal-icon:hover {
+    color: rgb(18, 145, 161);
+}
+
+main #section-1 .modal .modal-content {
+    margin-top: 2em;
+}
+
+main #section-1 .modal .modal-content > form > input {
+    padding: 0.4em 1rem;
+    margin: 7px;
+}
+
+main #section-1 .open-modal {
+    top: 10em;    opacity: 1;
+}
+
+/* End  Section 1 */
+
+
+/* Section 2 */
+
+main #section-2 {
+    width: 100%;
+    height: 45em;
+    background: rgb(18, 145, 161);
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    overflow: hidden;
+}
+
+main #section-2 > .circle {
+    position: absolute;
+    background: #CDF0EA;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    right: -5%;
+    bottom: -20%;
+}
+
+main #section-2 > .image {
+    position: relative;
+    margin-top: 5rem;
+    z-index: 1;
+}
+
+main #section-2 > .image > .fancy::after {
+     content: '';
+     position: absolute;
+     background: #CDF0EA;
+     top: -9%;
+     left: -20%;
+     width: 20rem;
+     height: 20rem;
+     border-radius: 50% 0 0 0;
+     z-index: 1;    
+}
+
+main #section-2 > .image > .fancy img {
+    height: 35rem;
+    border-radius: 9rem 0rem 9rem 0rem;
+    position: relative;
+    box-shadow: 10px 10px 16px rgba(0, 0, 0, 0.2);
+    z-index: 9;
+}
+
+main #section-2 > article {
+    width: 35rem;
+    height: 35rem;
+    text-align: justify;
+    color: white ;
+} 
+
+main #section-2 > article > h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+main #section-2 > article > p {
+    font-weight: 600;
+}
+
+
+/* End  Section 2 */
+
+
+/* Section 3 */
+
+main #section-3 {
+    text-align: center;
+    margin-top: 4rem;
+    height: 50em;
+} 
+
+main #section-3 > h2 {
+    margin-top: 7rem;
+    font-size: 2rem;
+    color: rgb(12, 30, 63);
+}
+
+main #section-3 .skill-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+main #section-3 .skill-box > .box  {
+    width: 15em;
+    padding: 2rem 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.2);
+    background: rgb(231, 233, 233);
+    margin-top: 7rem;
+    transition: .4s ease;
+}
+
+main #section-3 .skill-box > .box > h3 {
+    margin-bottom: 1rem;
+    color: rgb(112, 112, 112);
+}
+
+main #section-3 .skill-box > .box:hover {
+    transform: translateY(10px);
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.5);
+}
+
+main #section-3 .skill-box > .box > img {
+    width: 10em;
+}
+
+/* End  Section 3 */
+
+
+/* Section 4 */
+
+main #section-4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #CDF0EA;
+    height: 45em;
+}
+
+main #section-4 > h2 {
+    margin-top: 7rem;
+    font-size: 2rem;
+    color: #1291A1;
+}
+
+main #section-4 > .services-box article{
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   width: 70em;
+   margin-top: 7rem;
+}
+
+main #section-4 > .services-box > article > .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 15rem;
+    height: 15rem;
+    background: #1291A1;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    border: 8px solid white;
+}
+
+main #section-4 > .services-box > article > .box h3 {
+    color: white;
+}
+
+main #section-4 > .services-box > article > .box > img {
+    width: 4rem;
+    margin-bottom: 2rem;
+}
+
+/* End Section 4 */
+
+
+/* Footer */
+
+footer #footer {
+    height: 60em;
+    background: #1291A1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+footer #footer > h2 {
+    color: white;
+    margin-top: 7rem;
+    font-size: 2rem;
+}
+
+footer #footer > p {
+    color: white;
+    font-size: 1rem;
+    margin-top: 2rem;
+}
+
+footer #footer > .box-kontak > article{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 4em;
+    width: 55em;
+    color: white;
+    padding: 2rem;
+}
+
+footer #footer > .box-kontak > article > .box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer #footer > .box-kontak > article > .box > .icon {
+    width: 4rem;
+    height: 4.2rem;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    margin-bottom: 15px;
+}
+
+footer #footer > .box-input > article > .box {
+    border: 4px solid rgb(255, 255, 255);
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+footer #footer > .box-input > article > .box > form {
+   display: flex;
+   flex-direction: column;
+} 
+
+footer #footer > .box-input > article > .box > form > .deks {
+    height: 6rem;
+    margin-top: 1rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: none;
+    font-family: "Poppins" sans-serif;
+}
+
+footer #footer > .box-input > article > .box > form > .deks:focus {
+    outline: none;
+}
+
+footer #footer > .box-input > article > .box > form > input {
+    border: none;
+    margin: 6px;
+    width: 20rem;
+    height: 2.5rem;
+    margin: 10px;
+    border-radius: 4px;
+    padding: 1rem;
+}
+
+footer #footer > .box-input > article > .box > form > input:focus {
+   outline: none;
+}
+
+
+footer #footer > .box-input > article > .box > form > .btn {
+    border: none;
+    background: white;
+    color: #1291A1;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .4s ease;
+}
+
+footer #footer > .box-input > article > .box > form > .btn:hover {
+      background: #070e47;
+      color: white;
+
+}
+
+/* End Footer */
+
+
+/* Responsive */
+
+@media (max-width: 1170px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    /* Section 1 */
+
+    main #section-1  {
+        flex-direction: column;
+        margin-top: 7em;
+        margin-bottom: 15rem;
+    }
+
+    main #section-1 .image  {
+        order: 1;
+    }
+
+    main #section-1 article {
+        order: 2;
+        margin-top: 5rem;
+    }
+ 
+    /* End Section 1 */
+
+
+    /* Section 2 */
+
+    main #section-2 {
+        flex-direction: column;
+        height: 90em;
+    }
+
+    main #section-2 > .image {
+        order: 1;
+    }
+
+    main #section-2 > article {
+        order: 2;
+        flex-direction: column;
+    }
+
+    main #section-2 > .circle {
+        left: -10%;
+        bottom: -10%;
+    }
+
+    /* End Section 2 */
+}
+
+@media (max-width: 1120px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    /* Section 3 */
+
+    main #section-3 {
+       height: 70em;
+       margin-bottom: 7rem;
+    }
+
+    main #section-3 .skill-box {
+        flex-direction: column;
+    }
+
+    main #section-3 .skill-box > .box {
+        margin-top: 4rem;
+    }
+
+    /* End Section 3 */
+
+
+    /* Section 4 */
+
+    main #section-4 {
+        height: 90em;
+    }
+ 
+    main #section-4 > .services-box article {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 4rem;
+    }
+
+    main #section-4 > .services-box > article > .box {
+        width: 30em;
+        margin: 1rem;
+    }
+
+    /* End Section 4 */
+
+    /* Footer */
+
+    footer #footer {
+       height: 80em;
+    }
+
+    footer #footer > .box-kontak > article {
+        flex-direction: column;
+        margin-top: 2rem;
+        width: 100%;
+    }
+
+    footer #footer > .box-kontak > article > .box {
+        margin: 1rem;
+    }
+
+    /* End Footer */
+
+}
+
+
+
+@media (max-width: 700px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    /* Section 1 */
+
+    main #section-1 article > h1 {
+        font-size: 2.5em;
+        line-height: 3.1rem;
+    }
+
+    main #section-1 article > p {
+        font-size: 1rem;
+    }
+
+    main #section-1 .image .fancy {
+        width: 28em;
+        height: 28em;
+    }
+
+    main #section-1 .image .fancy > img {
+        top: -12em;
+        right: 1.5em;
+    }
+
+    /* End Section 1 */
+
+
+    /* Section 2 */
+
+    main #section-2 > .circle {
+        bottom: -8%;
+        left: -12%;
+        width: 15rem;
+        height: 15rem; 
+    }
+
+    /* End Section 2 */
+
+}
+
+@media (max-width: 600px) {
+    
+    /* Header */
+
+    header .navbar-nav > .nav-links {
+        position: absolute;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: rgb(255, 255, 255);
+        font-size: 1.5rem;
+        height: 17em;
+        width: 100%;
+        top: -25em;
+        left: 0;
+        border-radius: 0 0 20px 20px;
+        box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+        transition: .5s ease;
+    }
+
+    header .navbar-nav > .active {
+        top: 0;   
+    }
+
+    header .navbar-nav > .close {
+        top: -25em;
+    }
+
+    header .navbar-nav .nav-links > li  {
+        margin: 0.5rem 0;
+    }
+
+    header .navbar-nav .nav-links > li > a {
+        color: rgb(12, 30, 63);
+    } 
+
+    header .navbar-nav .nav-toggler {
+        right: 6%;
+        top: 25%;
+        cursor: pointer;
+        z-index: 9;
+    }
+
+    /* End Header */
+
+    /* Section 2 */
+
+    main #section-2 {
+        height: 100em;
+    }
+
+    main #section-2 > .image {
+        margin-top: -10rem;
+    }
+
+    main #section-2 > article {
+        width: 100%;
+        padding: 2rem;
+        margin-top: -18rem;
+    }
+
+    /* End Section 2 */
+}
+
+@media (max-width: 580px) {
+    
+    /* Section 1 */
+
+    main #section-1 article > h1 {
+       font-size: 2.5rem;
+       text-align: center;
+    }
+    main #section-1 article > p {
+        text-align: center;
+        padding: 1rem;
+    }
+
+    main #section-1 article .button {
+        display: flex;
+        justify-content: center;
+    }
+
+    main #section-1 .image .fancy {
+        width: 25rem;
+        height: 25rem;
+    }
+
+
+    main #section-1 .image .fancy > img {
+        right: 1em;
+        top: -11em;
+        width: 25rem;
+    }
+
+    /* End Section 1 */
+
+    
+    /* Section 2 */
+
+    main #section-2 > .image, .fancy::after {
+           transform: translateX(20px);
+     }
+
+     /* End Section 2 */
+
+     /* Section 4 */
+
+     main #section-4 > .services-box > article > .box {
+         width: 20rem;
+         height: 15rem;
+     }
+
+     /* End Section 4 */
+
+}
+
+
+@media (max-width: 460px) {
+
+     /* Section 1 */
+
+     main #section-1 article > h1 {
+        font-size: 2rem;
+        line-height: 2.6rem;
+     }
+
+     main #section-1 .image .fancy {
+         width: 20rem;
+         height: 20rem;
+     }
+ 
+ 
+     main #section-1 .image .fancy > img {
+         right: 2em;
+         top: -6em;
+         width: 18rem;
+     }
+ 
+     /* End Section 1 */
+
+}
+
+@media (max-width: 400px) {
+
+    /* Section 1 */
+
+    main #section-1 {
+        height: 30em;
+    }
+
+    main #section-1 article > h1 {
+        font-size: 1.7em;
+        line-height: 1.3em;
+        margin-top: -0.5em;
+    }
+
+    main #section-1 article > p {
+        font-size: 0.9em;
+    }
+
+    main #section-1 .image .fancy {
+        width: 15em;
+        height: 15em;
+        margin-top: 8em;
+    }
+
+    main #section-1 .image .fancy > img {
+        left: -12%;
+        top: -50%;
+    }
+
+    /* End Section 1 */
+
+
+    /* Section 2 */
+
+    main #section-2 > .image > .fancy::after {
+        width: 12em;
+        height: 15em;
+        left: -12%;
+        top: -9%;
+        transform: rotate(1deg);
+    }
+
+    main #section-2 > .image > .fancy img {
+        width: 14em;
+        height: 26em;
+        left: -5%;
+    }
+
+    main #section-2 > .circle {
+        left: -50%;
+    }
+
+    /* End Section 2 */
+
+    /* Section 4 */
+ 
+    main #section-4 > .services-box > article > .box {
+        width: 15em;
+    }
+
+    /* End Section 4 */
+
+    /* Footer */
+
+    footer #footer > .box-input > article > .box {
+        width: 16.5em;
+    }
+
+    footer #footer > .box-input > article > .box > form > input {
+        width: 15em;
+    }
+
+    /* End Footer */
+}
+
+@media (max-width: 320px) {
+
+     /* Section 1 */
+
+    main #section-1 article > h1 {
+        font-size: 1.6em;
+        line-height: 1.3em;
+        margin-top: -0.5em;
+    }
+
+    main #section-1 article .button > button {
+        padding: 0.6em 1.5em;
+    }
+
+    /* End Section 1 */
+
+
+    /* Section 2 */
+
+    main #section-2 > .image {
+        margin-top: -15em;
+    }
+
+    main #section-2 > .circle {
+        left: -50%;
+        bottom: -10%;
+    }
+
+   main #section-2 > article > h2 {
+        margin-top: -2.5em;
+    }
+
+    /* End Section 2 */
+}
